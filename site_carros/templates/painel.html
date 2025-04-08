@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Painel - Garagem 06</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/painel.css') }}">
+</head>
+<body>
+    <div class="painel-container">
+        <h1>Bem-vindo ao Painel</h1>
+        <div class="botoes">
+            <a href="{{ url_for('cadastrar_cliente') }}" class="botao">Cadastrar Cliente</a>
+            <a href="{{ url_for('verificar_cliente') }}" class="botao">Verificar Condição do Cliente</a>
+            <a href="{{ url_for('atualizar_cliente') }}" class="botao">Atualizar Condição do Cliente</a>
+            <a href="{{ url_for('analise') }}" class="botao">Análise da Garagem 06</a> <!-- NOVO BOTÃO -->
+        </div>
+    </div>
+</body>
+</html>

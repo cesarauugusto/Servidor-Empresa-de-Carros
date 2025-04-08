@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastrar Cliente</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/cadastro.css') }}">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Cadastro de Cliente</h2>
+        <form method="POST" action="{{ url_for('cadastrar_cliente') }}">
+            <label>Nome:</label>
+            <input type="text" name="nome" required>
+
+            <label>Carro:</label>
+            <input type="text" name="carro" required>
+
+            <label>CPF:</label>
+            <input type="text" name="cpf" required>
+
+            <label>Placa:</label>
+            <input type="text" name="placa" required>
+
+            <button type="submit">Salvar Cliente</button>
+        </form>
+    </div>
+</body>
+</html>
